@@ -6,7 +6,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Umair Cattle & Poultry Feeds</title>
   </head>
-  <body>
+  <body class="flex flex-col hight-screen gap-5">
     <header>
       <div>
         <a href="/"
@@ -14,14 +14,30 @@
         /></a>
       </div>
       <div>
-        <div class="flex justify-evenly flex-wrap gap-2.5">
-          <div>Only people from Karachi can order</div>
-          <div>کراچی کے لوگ ہی آرڈر دے سکتے ہیں۔</div>
+        <div
+          class="flex justify-evenly max-w-[700px] px-2 mx-auto font-semibold flex-wrap gap-2"
+        >
+          <div>English : Only people from Karachi can order</div>
+          <div>اردو : صرف کراچی والے ہی آرڈر دے سکتے ہیں</div>
         </div>
       </div>
     </header>
-    <main class="w-full flex justify-center items-center flex-col">
+    <main class="w-full h-full flex justify-center items-center flex-col gap-5">
       <h1 class="text-5xl font-black">Products</h1>
+      <div class="">
+        <div class="p-3 bg-green-600 rounded-xl">
+          <div
+            class="bg-[url(https://media.istockphoto.com/id/521602228/photo/animal-feed.jpg)] bg-cover h-50 w-50"
+          ></div>
+          <div class="text-white font-semibold flex flex-col gap-1">
+            <h2>Name : animal feed</h2>
+            <h2>Price : 999 PKR</h2>
+            <button class="bg-orange-400 p-1 rounded-md cursor-pointer">
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
